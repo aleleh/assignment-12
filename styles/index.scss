@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     background-color: black;
     color: white;
@@ -11,7 +16,8 @@ body {
     justify-content: space-around;
     flex-direction: row;
 
-    height: 100vh;
+    height: 40em;
+    width: 70em;
     padding: 3em 0 0 0;
 }
 
@@ -127,15 +133,22 @@ nav {
         background-position: center;
         background-image: url("../images/musician-medium.png");
     }
-
-
 }
 
 @media only screen and (max-width: 600px) {
 
+    html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     body {
-        min-width: 350px;
-        min-height: 600px;
+       // min-width: 350px;
+       // min-height: 600px;
+
+        height: 100vh;
+        width: 100%;
     }
    
     nav ul{
@@ -166,8 +179,6 @@ nav {
         background-size: 100% 100%;
         background-position: center;
     }
-
-
 }
   
 
