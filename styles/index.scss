@@ -13,11 +13,13 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
 
-    height: 40em;
+    height: 100vh;
     width: 70em;
+    min-width: 370px;
+    min-height: 530px;
     padding: 3em 0 0 0;
 }
 
@@ -59,7 +61,9 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    max-height: 43.125em;
+    width: 100%;
+    max-width: 36.5625em;
 
     h1 {
        font-size: 5.375em; 
@@ -137,16 +141,7 @@ nav {
 
 @media only screen and (max-width: 600px) {
 
-    html {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     body {
-       // min-width: 350px;
-       // min-height: 600px;
-
         height: 100vh;
         width: 100%;
     }
